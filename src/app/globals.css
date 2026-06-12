@@ -151,40 +151,38 @@ body {
   letter-spacing: -0.03em;
 }
 
-/* Print: the drag check result is a paper artifact. White paper,
-   near-black ink, amber reserved for the two totals. */
+/* Print: the drag check result prints as a branded letterhead sheet.
+   The sheet is a body-level element that only exists on paper; every
+   other body child collapses to display:none so the document is exactly
+   as long as the profile. */
+.print-sheet {
+  display: none;
+}
 @media print {
+  @page {
+    margin: 0.6in;
+  }
   html,
   body {
     background: #fff !important;
   }
-  body * {
-    visibility: hidden;
+  body > *:not(.print-sheet) {
+    display: none !important;
   }
-  .print-target,
-  .print-target * {
-    visibility: visible;
+  .print-sheet {
+    display: block !important;
+    background: #fff;
+    color: #1a1a18;
+    font-size: 11pt;
+    line-height: 1.65;
   }
-  .print-target {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background: #fff !important;
-    padding: 0.4in;
-  }
-  .print-target * {
-    color: #1a1a18 !important;
-    border-color: #c9c4ba !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  .print-target .print-amber,
-  .print-target .print-amber * {
+  .print-sheet .sheet-amber {
     color: #8a5c10 !important;
   }
-  .print-target .no-print {
-    display: none !important;
+  .print-sheet .sheet-dim {
+    color: #6b675f !important;
+  }
+  .print-sheet .sheet-rule {
+    border-color: #c9c4ba !important;
   }
 }

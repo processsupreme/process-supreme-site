@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   dragFaults,
@@ -168,6 +169,8 @@ export function ProblemPriced() {
   const [readMode, setReadMode] = useState(false);
   const [channel, setChannel] = useState<DemoKey>("report");
   const [pinned, setPinned] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   const summary = useMemo(() => summarize(flagged), [flagged]);
 
@@ -275,7 +278,7 @@ export function ProblemPriced() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className="border-b border-line bg-deck print-target"
+              className="border-b border-line bg-deck"
             >
               <div className="max-w-container mx-auto px-6 lg:px-10 py-7 font-mono text-tele leading-[1.9]">
                 {summary.flagged.length === 0 ? (
@@ -306,7 +309,7 @@ export function ProblemPriced() {
 
                     <p className="mt-5 text-fg">
                       <span className="text-dim">∑ </span>estimated drag:{" "}
-                      <span className="print-amber inline-flex items-baseline gap-1.5 flex-wrap">
+                      <span className="inline-flex items-baseline gap-1.5 flex-wrap">
                         <OdometerNumber
                           value={`${summary.hours[0]}–${summary.hours[1]}`}
                           className="text-amber"
@@ -322,7 +325,7 @@ export function ProblemPriced() {
                     </p>
 
                     {evidenceFault && (
-                      <p className="mt-3 no-print">
+                      <p className="mt-3">
                         <span className="text-mute">see {evidenceFault.engine} running:</span>{" "}
                         {evidenceFault.evidence === "purchasing" ? (
                           <a href="#purchasing" className="text-amber hover:text-amber-bright transition-colors">
@@ -350,18 +353,7 @@ export function ProblemPriced() {
                   builds, not a quote.
                 </p>
 
-                {/* Print artifact footer: only exists on paper */}
-                <p className="hidden print:block mt-4 text-tele-sm uppercase">
-                  drag check profile · printed{" "}
-                  {new Date().toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}{" "}
-                  · process-supreme.vercel.app
-                </p>
-
-                <span className="no-print inline-flex flex-wrap items-center gap-6 mt-6">
+                <span className="inline-flex flex-wrap items-center gap-6 mt-6">
                   <Link
                     href={contactHref}
                     data-tracking="drag-check-cta"
@@ -390,6 +382,81 @@ export function ProblemPriced() {
           </a>
         </div>
       </section>
+
+      {/* Paper artifact: branded letterhead, exists only in print */}
+      {mounted &&
+        readMode &&
+        summary.flagged.length > 0 &&
+        createPortal(
+          <div className="print-sheet font-mono" aria-hidden>
+            {/* Letterhead */}
+            <div className="flex items-baseline justify-between pb-3 border-b-2 sheet-rule" style={{ borderBottomWidth: 2 }}>
+              <span style={{ fontSize: "14pt" }}>
+                <span className="sheet-amber">●</span> run{" "}
+                <span className="sheet-amber">process</span>_supreme
+              </span>
+              <span className="sheet-dim" style={{ letterSpacing: "0.1em" }}>
+                DRAG CHECK PROFILE
+              </span>
+            </div>
+            <p className="sheet-dim" style={{ margin: "8pt 0 16pt", fontSize: "9pt" }}>
+              printed{" "}
+              {new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}{" "}
+              · flagged by the operator at process-supreme.vercel.app
+            </p>
+
+            {/* Flagged faults */}
+            {summary.flagged.map((f) => (
+              <div
+                key={f.id}
+                className="sheet-rule"
+                style={{ borderBottom: "1px solid", padding: "8pt 0", breakInside: "avoid" }}
+              >
+                <p style={{ fontWeight: 700 }}>
+                  <span className="sheet-dim">{f.id}</span> {f.switchLabel}{" "}
+                  <span className="sheet-dim">→</span> {f.engine}
+                </p>
+                <p style={{ margin: "2pt 0 0" }}>{f.prescription}</p>
+                <p style={{ margin: "2pt 0 0" }}>
+                  <span className="sheet-dim">typical recovery: </span>
+                  <span className="sheet-amber" style={{ fontWeight: 700 }}>
+                    {recoveryLine(f)}
+                  </span>
+                </p>
+              </div>
+            ))}
+
+            {/* Totals */}
+            <p style={{ margin: "14pt 0 0", fontSize: "13pt", fontWeight: 700 }}>
+              ∑ estimated drag:{" "}
+              <span className="sheet-amber">
+                {summary.hours[0]}–{summary.hours[1]} hrs/week ≈ {fmtK(summary.dollars[0])}–
+                {fmtK(summary.dollars[1])} per year
+              </span>
+              {altSuffix}
+            </p>
+            <p className="sheet-dim" style={{ margin: "10pt 0 0", fontSize: "9pt", letterSpacing: "0.08em" }}>
+              DOLLARS AT $35/HR LOADED COST. TYPICAL RANGES FROM REAL BUILDS, NOT A QUOTE.
+            </p>
+
+            {/* Footer */}
+            <div
+              className="sheet-rule"
+              style={{ borderTop: "1px solid", marginTop: "16pt", paddingTop: "8pt", display: "flex", justifyContent: "space-between", fontSize: "9pt" }}
+            >
+              <span>
+                book the demo:{" "}
+                <span style={{ fontWeight: 700 }}>process-supreme.vercel.app/contact</span>
+              </span>
+              <span className="sheet-amber">PS, we love you</span>
+            </div>
+          </div>,
+          document.body
+        )}
 
       {/* WATCH AN ENGINE RUN */}
       <section id="demos" className="relative py-band bg-deck scroll-mt-14">
