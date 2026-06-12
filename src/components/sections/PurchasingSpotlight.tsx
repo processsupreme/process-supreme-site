@@ -170,19 +170,19 @@ export function PurchasingSpotlight() {
             <span className="w-[7px] h-[7px] rounded-full bg-steel" aria-hidden />
             from a live deployment. our own stores, every day. not a promise of yours.
           </div>
-          {/* The real screen: live capture, figures blurred */}
+          {/* The real screen: live capture, sensitive columns redacted */}
           <div className="border-b border-line">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/taps-live.png"
-              alt="Live screen from our purchasing engine deployment: brand weeks-of-supply across all stores, figures blurred"
+              src="/images/taps-rankings.png"
+              alt="Live screen from our purchasing engine deployment: brand power rankings with grades, scores, margins, and momentum. Brand names and dollar columns redacted."
               width={2268}
-              height={1000}
+              height={1293}
               loading="lazy"
               className="w-full h-auto block"
             />
             <p className="px-5 py-2 font-mono text-tele-sm uppercase text-dim border-t border-line">
-              live screen, this morning&apos;s sync · figures blurred
+              live screen, this morning&apos;s sync · brands and dollars redacted
             </p>
           </div>
           <div className="px-5 py-4 flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 font-mono">
