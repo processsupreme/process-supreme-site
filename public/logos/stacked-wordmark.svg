@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#0A0A0A"/>
+  <text x="40" y="80" font-family="Arial Black, Arial, sans-serif" font-size="56" font-weight="900" fill="#E3DAC9">PROCESS</text>
+  <text x="40" y="145" font-family="Arial Black, Arial, sans-serif" font-size="56" font-weight="900" fill="#722F37">SUPREME</text>
+  <rect x="40" y="160" width="320" height="4" fill="#722F37"/>
+</svg>

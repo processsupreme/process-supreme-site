@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .plate { fill: #17191D; }
+    .ring { stroke: #3A5564; }
+    @media (prefers-color-scheme: light) {
+      .plate { fill: #121316; }
+      .ring { stroke: #7FB2C9; }
+    }
+  </style>
+  <rect class="plate" width="64" height="64" rx="14" />
+  <circle class="ring" cx="32" cy="32" r="21" fill="none" stroke-width="2" opacity="0.55" />
+  <circle cx="32" cy="32" r="11" fill="#E8A33D" />
+  <path d="M14 54h36" stroke="#3A5564" stroke-width="2" opacity="0.6" />
+</svg>

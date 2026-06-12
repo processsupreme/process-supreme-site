@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Process Supreme Marketing Website
+
+A production-quality Next.js marketing website for Process Supreme. We build custom software that cuts operational fat out of a business.
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Fonts:** Playfair Display, DM Sans, JetBrains Mono (Google Fonts)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Create production build
+npm run build
 
-## Learn More
+# Start production server
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── about/             # About page
+│   ├── contact/           # Contact page with form
+│   ├── engines/           # Engines hub and dynamic engine pages
+│   │   └── [slug]/        # Individual engine pages
+│   ├── results/           # Results/metrics page
+│   ├── layout.tsx         # Root layout with header/footer
+│   ├── page.tsx           # Homepage
+│   ├── sitemap.ts         # Dynamic sitemap
+│   └── robots.ts          # Robots.txt
+├── components/
+│   ├── icons/             # Logo and icon components
+│   ├── layout/            # Header, Footer, Container
+│   ├── sections/          # Page sections (Hero, EngineGrid, etc.)
+│   └── ui/                # Reusable UI components
+├── data/
+│   └── engines.ts         # Engine data and types
+└── lib/
+    └── utils.ts           # Utility functions
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Pages
 
-## Deploy on Vercel
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage with hero, problem statement, featured engines, origin story, trust signals, CTA |
+| `/engines` | All 7 engines overview |
+| `/engines/[slug]` | Individual engine pages (brand-analytics, daily-operations, etc.) |
+| `/about` | Company story and values |
+| `/results` | Consolidated metrics and outcomes |
+| `/contact` | Contact form and Calendly placeholder |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Design System
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Colors
+
+| Name | Hex | Usage |
+|------|-----|-------|
+| Wine | `#722F37` | Primary accent, CTAs, headlines |
+| Bone | `#E3DAC9` | Primary text on dark backgrounds |
+| Black | `#0A0A0A` | Background (dark mode default) |
+| Warm Grey | `#A89F91` | Secondary text, borders |
+| Grey | `#4A4A4A` | Body text on light backgrounds |
+
+### Typography
+
+- **Display (Headlines):** Playfair Display
+- **Body:** DM Sans
+- **Monospace/Code:** JetBrains Mono
+
+## Deployment
+
+This project is configured for Vercel deployment:
+
+```bash
+# Deploy to Vercel
+vercel
+```
+
+Or connect your GitHub repository to Vercel for automatic deployments.
+
+## TODO Items
+
+- [ ] Add actual Calendly URL for demo booking
+- [ ] Implement form submission backend (currently stubbed)
+- [ ] Add Open Graph images (1200x630)
+- [ ] Add analytics integration (Plausible/PostHog)
+- [ ] Connect to processsupreme.com domain
+
+## License
+
+Copyright 2026 Process Supreme LLC. All rights reserved.

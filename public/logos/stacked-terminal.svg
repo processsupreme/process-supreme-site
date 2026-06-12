@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0A0A0A"/>
+  <text x="60" y="140" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="900" fill="#E3DAC9">PROCESS</text>
+  <text x="60" y="220" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="900" fill="#722F37">SUPREME</text>
+  <rect x="60" y="240" width="380" height="4" fill="#722F37"/>
+  <text x="60" y="290" font-family="monospace" font-size="24" font-style="italic">
+    <tspan fill="#4A4A4A">run</tspan><tspan fill="#722F37">_process</tspan><tspan fill="#E3DAC9">_supreme</tspan>
+  </text>
+</svg>
