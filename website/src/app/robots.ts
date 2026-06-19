@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://processsupreme.com/sitemap.xml",
+    sitemap: "https://process-supreme.com/sitemap.xml",
   };
 }

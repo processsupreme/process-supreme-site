@@ -406,7 +406,7 @@ export function ProblemPriced() {
                 month: "long",
                 day: "numeric",
               })}{" "}
-              · flagged by the operator at process-supreme.vercel.app
+              · flagged by the operator at process-supreme.com
             </p>
 
             {/* Flagged faults */}
@@ -450,7 +450,7 @@ export function ProblemPriced() {
             >
               <span>
                 book the demo:{" "}
-                <span style={{ fontWeight: 700 }}>process-supreme.vercel.app/contact</span>
+                <span style={{ fontWeight: 700 }}>process-supreme.com/contact</span>
               </span>
               <span className="sheet-amber">PS, we love you</span>
             </div>

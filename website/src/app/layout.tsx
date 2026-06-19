@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://process-supreme.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://process-supreme.com"),
   title: {
     default: "Process Supreme | Cut the Fat Out of How Your Business Runs",
     template: "%s | Process Supreme",
