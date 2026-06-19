@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
 
     const resend = new Resend(apiKey);
     await resend.emails.send({
-      from: "Process Supreme <noreply@processsupreme.com>",
+      from: "Process Supreme <noreply@process-supreme.com>",
       to: "john@thrivenevada.com",
       replyTo: email,
       subject: `New inquiry from ${name} at ${company}`,
