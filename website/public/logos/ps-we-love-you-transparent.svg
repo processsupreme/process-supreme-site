@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="250" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(50, 180) rotate(-5)">
+    <text font-family="Brush Script MT, Segoe Script, Bradley Hand, cursive" 
+          font-size="90" 
+          fill="#722F37"
+          font-style="italic">
+      <tspan x="0" y="0">PS, we love you</tspan>
+    </text>
+  </g>
+</svg>
