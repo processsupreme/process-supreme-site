@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="60" viewBox="0 0 500 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="60" fill="#0E0F11"/>
+  <text x="20" y="42" font-family="monospace" font-size="32">
+    <tspan fill="#787F8A">run </tspan><tspan fill="#E8A33D">process</tspan><tspan fill="#E9EAEC">_supreme</tspan>
+  </text>
+</svg>

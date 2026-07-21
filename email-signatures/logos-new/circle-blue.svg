@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="92" fill="#0E0F11" stroke="#7FB2C9" stroke-width="6"/>
+  <text x="100" y="90" font-family="Arial Black, Arial, sans-serif" font-size="24" font-weight="900" fill="#7FB2C9" text-anchor="middle">PROCESS</text>
+  <text x="100" y="120" font-family="Arial Black, Arial, sans-serif" font-size="24" font-weight="900" fill="#E8A33D" text-anchor="middle">SUPREME</text>
+</svg>
