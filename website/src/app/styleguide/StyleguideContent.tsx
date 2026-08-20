@@ -128,7 +128,7 @@ export function StyleguideContent() {
         </p>
         <h1 className="font-display text-section text-fg mb-3">Styleguide</h1>
         <p className="font-mono text-tele text-mute mb-16 max-w-[56ch]">
-          <span className="text-dim">{"// "}</span>the as-built system, captured
+          The as-built system, captured
           as tokens. source of truth:{" "}
           <span className="text-fg">src/styles/tokens.ts</span>. internal page,
           not indexed.
@@ -189,14 +189,14 @@ export function StyleguideContent() {
 
         <Section title="controls">
           <div className="flex flex-wrap items-center gap-5 bg-panel border border-line rounded-panel p-7">
-            <Button variant="primary">Book a demo →</Button>
+            <Button variant="primary">Request a process review →</Button>
             <Button variant="secondary">See how it works</Button>
-            <Button variant="command">&gt; book_demo</Button>
+            <Button variant="command">&gt; request a process review</Button>
             <Button variant="ghost">full engine index →</Button>
           </div>
           <p className="mt-4 font-mono text-tele text-dim max-w-[64ch]">
             <span className="text-amber">note:</span> primary CTAs on the site
-            usually render as command prompts ($ tell us where it hurts) rather
+            usually render as command prompts ($ show us the process) rather
             than buttons. the button variants cover forms and secondary
             placements.
           </p>

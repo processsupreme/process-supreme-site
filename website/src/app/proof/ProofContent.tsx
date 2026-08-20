@@ -151,8 +151,7 @@ export function ProofContent() {
               Hard mode, <span className="text-amber">made lean.</span>
             </h1>
             <p className="mt-6 font-mono text-tele text-mute max-w-[56ch] leading-[1.8]">
-              <span className="text-dim">{"// "}</span>cannabis retail and
-              cultivation. our own operation. one of the most regulated,
+              Cannabis retail and cultivation. Our own operation. One of the most regulated,
               margin-thin categories in retail, run lean by engines we built
               on the floor.
             </p>
@@ -223,7 +222,6 @@ export function ProofContent() {
                         {e.title}
                       </h3>
                       <p className="mt-2 font-mono text-tele text-mute leading-[1.8]">
-                        <span className="text-dim">{"// "}</span>
                         {e.note}
                       </p>
                       <p className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5 font-mono text-tele-sm uppercase">
@@ -315,7 +313,7 @@ export function ProofContent() {
                 Your industry has its own hard mode. If we could cut fat here,
                 we can cut it in your operation.
               </p>
-              <CommandLink href="/contact">tell us where it hurts</CommandLink>
+              <CommandLink href="/contact">show us the process</CommandLink>
             </div>
           </div>
         </div>

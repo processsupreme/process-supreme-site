@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
  */
 
 const checks = [
-  "regulated industry, paperwork that never stops",
-  "multi-location, outgrew the spreadsheets years ago",
-  "small-to-midmarket team doing enterprise process by hand",
-  "your week disappears into numbers you only half believe",
+  "the same report, export, or reconciliation gets rebuilt every week",
+  "people move data between your POS, accounting, payroll, inventory, or spreadsheets",
+  "you run multiple locations or work in a regulated, inventory-heavy industry",
+  "the business has outgrown its process, but replacing every core system makes no sense",
 ];
 
 export function WhoItsFor() {
@@ -23,8 +23,12 @@ export function WhoItsFor() {
             Is this you?
           </p>
           <h2 className="font-display font-bold text-heading text-fg mb-7">
-            Operators buried in process.
+            A good fit looks like this.
           </h2>
+          <p className="text-body-sm text-mute mb-7 max-w-[48ch]">
+            The clearest opportunities live in work that is important, repeatable,
+            and stuck between systems that were never designed to work together.
+          </p>
           <ul className="space-y-4 font-mono text-tele leading-relaxed">
             {checks.map((item, i) => (
               <motion.li

@@ -359,7 +359,7 @@ export function ProblemPriced() {
                     data-tracking="drag-check-cta"
                     className="inline-flex items-center gap-3 px-6 py-3 bg-amber text-deck rounded-hard font-medium font-body hover:bg-amber-bright transition-colors"
                   >
-                    Book the demo. Bring this profile. →
+                    Request a process review. Bring this profile. →
                   </Link>
                   {summary.flagged.length > 0 && (
                     <button
@@ -449,7 +449,7 @@ export function ProblemPriced() {
               style={{ borderTop: "1px solid", marginTop: "16pt", paddingTop: "8pt", display: "flex", justifyContent: "space-between", fontSize: "9pt" }}
             >
               <span>
-                book the demo:{" "}
+                request a process review:{" "}
                 <span style={{ fontWeight: 700 }}>process-supreme.com/contact</span>
               </span>
               <span className="sheet-amber">PS, we love you</span>

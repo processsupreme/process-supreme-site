@@ -27,7 +27,7 @@ export function FinalCTA() {
           transition={{ duration: 0.5, delay: 0.05 }}
           className="font-display text-section text-fg"
         >
-          Tell us where it hurts.
+          Show us one job that should run itself.
         </motion.h2>
         <motion.div
           initial={{ y: 10 }}
@@ -37,11 +37,11 @@ export function FinalCTA() {
           className="mt-10 inline-block"
         >
           <CommandLink href="/contact" tracking="final-cta">
-            book a demo
+            request a process review
           </CommandLink>
           <p className="mt-5 font-mono text-tele text-dim">
-            30 minutes. no pitch deck. bring your drag profile, or just the
-            process your team hates the most.
+            Start with one recurring process. We will reply within 24 hours to
+            set up a 30-minute working session. No pitch deck.
           </p>
         </motion.div>
       </div>

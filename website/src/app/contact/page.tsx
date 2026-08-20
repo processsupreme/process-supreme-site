@@ -5,16 +5,16 @@ import { ContactForm } from "./ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Tell us where it hurts. 30 minutes, no pitch deck. Bring the process your team hates the most.",
+    "Request a 30-minute process review. Bring one recurring job your team is tired of doing by hand.",
   openGraph: {
     title: "Contact | Process Supreme",
-    description: "Tell us where it hurts. 30 minutes, no pitch deck. Bring the process your team hates the most.",
+    description: "Request a 30-minute process review. Bring one recurring job your team is tired of doing by hand.",
     images: ["/og/contact.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact | Process Supreme",
-    description: "Tell us where it hurts. 30 minutes, no pitch deck. Bring the process your team hates the most.",
+    description: "Request a 30-minute process review. Bring one recurring job your team is tired of doing by hand.",
     images: ["/og/contact.png"],
   },
 };
@@ -38,8 +38,9 @@ export default function ContactPage() {
             Tell us where it hurts.
           </h1>
           <p className="mt-5 font-mono text-tele text-mute max-w-[56ch] leading-[1.8]">
-            <span className="text-dim">{"// "}</span>bring the process your
-            team hates the most and we will tell you if an engine can take it.
+            Bring one recurring process your team is tired of doing by hand.
+            We will reply within 24 hours to set up a 30-minute working session
+            and tell you whether it is worth automating.
           </p>
         </div>
       </section>
@@ -48,7 +49,7 @@ export default function ContactPage() {
       <div className="border-b border-line bg-well">
         <div className="max-w-container mx-auto px-6 lg:px-10 py-4 flex flex-wrap gap-x-10 gap-y-2 font-mono text-tele-sm uppercase">
           <span className="text-dim">
-            <span className="text-amber">[✓]</span> 30 minutes, real data, no pitch deck
+            <span className="text-amber">[✓]</span> 30-minute working session, no pitch deck
           </span>
           <span className="text-dim">
             <span className="text-amber">[✓]</span> your operation, your pain points

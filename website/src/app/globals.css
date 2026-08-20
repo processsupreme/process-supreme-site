@@ -114,10 +114,6 @@ body {
 .hero-settle {
   animation: hero-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.hero-settle-late {
-  animation: hero-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.06s backwards;
-}
-
 /* Route transition: CSS-only so it costs nothing at first paint */
 @keyframes route-fade {
   from { opacity: 0; }

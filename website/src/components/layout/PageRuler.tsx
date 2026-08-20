@@ -13,6 +13,7 @@ import { usePathname } from "next/navigation";
  */
 
 const SECTION_LABELS: Record<string, string> = {
+  "what-we-automate": "what this looks like",
   "drag-check": "the problem, priced",
   demos: "watch an engine run",
   purchasing: "how deep an engine goes",

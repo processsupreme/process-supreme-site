@@ -12,20 +12,23 @@ const stations = [
   {
     id: "01",
     glyph: "diagnose" as GlyphName,
-    name: "Diagnose",
-    note: "Where your hours go, where your handoffs break, where the drag is. We learn your operation before we touch anything.",
+    name: "Find the drag",
+    note: "We walk one painful process from start to finish, find where the hours and mistakes enter, and estimate what fixing it is worth.",
+    deliverable: "You leave with: a workflow map, cost estimate, and recommendation.",
   },
   {
     id: "02",
     glyph: "build" as GlyphName,
-    name: "Build",
-    note: "The exact tool that removes your drag, fit to your operation, not the other way around.",
+    name: "Build the first engine",
+    note: "We connect the necessary data and build the smallest working tool that removes the job from your team's plate.",
+    deliverable: "You get: working software tested against your real operation.",
   },
   {
     id: "03",
     glyph: "run" as GlyphName,
-    name: "Run",
-    note: "The engine takes the job. Your team gets the hours back and your numbers stay right, every day, on their own.",
+    name: "Put it to work",
+    note: "We launch it with the people who use it, monitor the output, and improve it as the operation changes.",
+    deliverable: "You get: deployment, documentation, and a clear support plan.",
   },
 ];
 
@@ -33,8 +36,15 @@ export function Approach() {
   return (
     <section id="how-it-works" className="py-14 md:py-20 scroll-mt-14">
       <div className="max-w-container mx-auto px-6 lg:px-10">
-        <p className="font-mono text-tele-sm uppercase text-amber mb-10">
-          How it works
+        <p className="font-mono text-tele-sm uppercase text-amber mb-3">
+          What working with us looks like
+        </p>
+        <h2 className="font-display text-section text-fg max-w-[24ch] mb-4">
+          Start with one recurring job. Prove the value. Then decide what comes next.
+        </h2>
+        <p className="text-body text-mute max-w-[64ch] mb-12">
+          You do not need a software specification or a plan to rebuild the whole business.
+          Bring the process your team is tired of doing by hand.
         </p>
 
         {/* Desktop: horizontal rail */}
@@ -73,6 +83,7 @@ export function Approach() {
                 </p>
                 <h3 className="font-display font-bold text-heading text-fg">{s.name}</h3>
                 <p className="mt-2 text-body-sm text-mute max-w-[36ch]">{s.note}</p>
+                <p className="mt-3 font-mono text-tele text-steel max-w-[40ch]">{s.deliverable}</p>
               </motion.div>
             ))}
           </div>
@@ -91,19 +102,20 @@ export function Approach() {
               </p>
               <h3 className="font-display font-bold text-heading text-fg">{s.name}</h3>
               <p className="mt-1.5 text-body-sm text-mute">{s.note}</p>
+              <p className="mt-3 font-mono text-tele text-steel">{s.deliverable}</p>
             </div>
           ))}
         </div>
 
-        <p className="mt-9 font-mono text-tele text-mute max-w-[60ch]">
-          we build working software. AI is a tool we reach for when it is the
-          right one for the job, never the pitch.
+        <p className="mt-9 font-mono text-tele text-mute max-w-[66ch]">
+          We usually work around the systems you already have. No forced platform
+          change. No generic software subscription looking for a problem to solve.
         </p>
 
         {/* Handoff */}
         <p className="mt-6 font-mono text-tele">
           <a href="#numbers" className="text-steel hover:text-amber transition-colors">
-            we ran this playbook on our own stores first ↓
+            see what this changed in our own operation ↓
           </a>
         </p>
       </div>

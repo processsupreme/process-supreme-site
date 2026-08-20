@@ -7,7 +7,7 @@ import { Wordmark } from "./Header";
  */
 
 const commands = [
-  { name: "engines", href: "/engines" },
+  { name: "what we automate", href: "/engines" },
   { name: "proof", href: "/proof" },
   { name: "about", href: "/about" },
   { name: "contact", href: "/contact" },

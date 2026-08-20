@@ -30,7 +30,7 @@ export function Hero() {
           <div className="relative px-6 sm:px-10 lg:px-14 py-14 md:py-20 lg:py-24">
             <p className="font-mono text-tele-sm uppercase tracking-wider text-amber mb-6 flex items-center gap-2.5">
               <span className="w-[7px] h-[7px] rounded-full bg-amber" aria-hidden />
-              Built by operators, for operators
+              Custom software for operations teams
             </p>
 
             <h1 className="hero-settle font-display text-hero text-fg max-w-[14ch]">
@@ -38,11 +38,14 @@ export function Hero() {
               business runs.
             </h1>
 
-            <p className="hero-settle-late mt-7 text-body-lg text-mute max-w-[56ch] leading-relaxed">
-              We find the hours and dollars your operation loses to manual
-              work, then build the exact software that gets them back. Built
-              by people who run businesses, not software companies guessing at
-              your problems.
+            <p className="mt-7 text-body-lg text-mute max-w-[60ch] leading-relaxed">
+              Your team should not be copying data between systems, rebuilding
+              the same reports, or making expensive decisions from spreadsheets
+              nobody trusts. We build software that handles that work
+              automatically, around the systems you already use.
+            </p>
+            <p className="mt-5 font-mono text-tele text-steel">
+              Built by operators, for operators.
             </p>
           </div>
         </div>
@@ -56,16 +59,16 @@ export function Hero() {
           >
             <span className="text-amber">$</span>
             <span className="text-fg group-hover:text-amber transition-colors">
-              tell us where it hurts
+              show us the process you hate
             </span>
             <span className="cursor-blink inline-block w-[8px] h-[15px] bg-amber" aria-hidden />
-            <span className="ml-auto text-dim hidden md:block">[enter] book a demo →</span>
+            <span className="ml-auto text-dim hidden md:block">[enter] start with one job →</span>
           </Link>
           <a
-            href="#drag-check"
+            href="#what-we-automate"
             className="flex items-center justify-center gap-2 px-6 py-4 border-t sm:border-t-0 sm:border-l border-line text-steel hover:text-amber transition-colors"
           >
-            run the drag check ↓
+            see what we automate ↓
           </a>
         </div>
       </div>

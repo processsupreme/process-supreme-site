@@ -169,7 +169,7 @@ export function AboutContent() {
           <p className="text-body-lg text-fg max-w-[36ch] mb-8">
             Ready to work with operators who understand?
           </p>
-          <CommandLink href="/contact" tracking="about-cta">book a demo</CommandLink>
+          <CommandLink href="/contact" tracking="about-cta">request a process review</CommandLink>
         </div>
       </section>
     </>

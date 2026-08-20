@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
+import { WorkExamples } from "@/components/sections/WorkExamples";
 import { ProblemPriced } from "@/components/sections/DragCheck";
 import { PurchasingSpotlight } from "@/components/sections/PurchasingSpotlight";
 import { Approach } from "@/components/sections/Approach";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <WorkExamples />
       <ProblemPriced />
       <PurchasingSpotlight />
       <Approach />

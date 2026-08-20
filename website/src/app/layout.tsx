@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Process Supreme",
   },
   description:
-    "Custom software that removes manual work, hand-built reports, and spreadsheets that don't talk. Built by operators, for operators.",
+    "Custom software for operations teams. We connect existing systems and automate reporting, purchasing, compliance, inventory, and recurring back-office work.",
   keywords: [
     "operations automation",
     "custom business software",
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
     siteName: "Process Supreme",
     title: "Process Supreme | Cut the Fat Out of How Your Business Runs",
     description:
-      "Custom software that removes manual work, hand-built reports, and spreadsheets that don't talk. Built by operators, for operators.",
+      "We turn repetitive back-office work into custom software that runs on its own. Built by operators, for operators.",
     images: ["/og/home.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Process Supreme | Cut the Fat Out of How Your Business Runs",
     description:
-      "Custom software that removes manual work, hand-built reports, and spreadsheets that don't talk. Built by operators, for operators.",
+      "We turn repetitive back-office work into custom software that runs on its own. Built by operators, for operators.",
     images: ["/og/home.png"],
   },
   robots: {

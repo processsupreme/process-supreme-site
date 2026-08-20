@@ -97,8 +97,8 @@ export function PurchasingSpotlight() {
             <span className="text-amber">buying is your biggest line.</span>
           </h2>
           <p className="mt-4 font-mono text-tele text-mute max-w-[60ch] leading-[1.8]">
-            <span className="text-dim">{"// "}</span>if you buy inventory from
-            vendors, five levers sit between you and a leaner operation:
+            If you buy inventory from vendors, five levers sit between you and
+            a leaner operation:
             orders sized by math, cash split by urgency, terms backed by your
             own shelf, suppliers graded, dead capital named. one engine pulls
             all five.
@@ -159,7 +159,6 @@ export function PurchasingSpotlight() {
             </div>
           </div>
           <div className="px-6 lg:px-9 pb-7 font-mono text-tele text-mute leading-[1.8]">
-            <span className="text-dim">{"// "}</span>
             {lever.note}
           </div>
         </div>

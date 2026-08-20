@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
  */
 
 const navigation = [
-  { name: "engines", href: "/engines" },
+  { name: "what we automate", href: "/engines" },
   { name: "proof", href: "/proof" },
   { name: "about", href: "/about" },
   { name: "contact", href: "/contact" },
@@ -54,7 +54,7 @@ export function Header() {
             data-tracking="header-cta"
             className="border border-line rounded-hard px-4 py-2 text-amber hover:border-amber hover:bg-panel transition-colors"
           >
-            &gt; book_demo
+            &gt; request a process review
           </Link>
         </div>
 
@@ -96,7 +96,7 @@ export function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 data-tracking="mobile-header-cta"
               >
-                &gt; book_demo
+                &gt; request a process review
               </Link>
             </div>
           </motion.div>
